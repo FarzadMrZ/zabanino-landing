@@ -1,0 +1,843 @@
+@import "../../font/font.css";
+@import "library/aos.css";
+
+@mixin flex-manager($direction,$justify,$align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+body {
+  direction: rtl;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: IRANSansWebwoff2, serif;
+  background-image: url("../../assets/backD.jpg");
+
+  .section-one {
+    width: 100%;
+    @include flex-manager(column, center, center);
+
+
+    .logo {
+      width: 100%;
+      text-align: center;
+      border-top: 2px dashed rgba(0, 0, 0, 0.20);
+      border-bottom: 2px dashed rgba(0, 0, 0, 0.20);
+      padding: 30px 0;
+      margin: 40px 0;
+    }
+
+    .title {
+      width: 100%;
+      font-size: 55px;
+      font-weight: 900;
+      text-align: center;
+
+      .blue {
+        color: dodgerblue;
+      }
+    }
+
+    .nas-chat-resp {
+      display: none;
+    }
+
+    .jab-chat-resp {
+      display: none;
+    }
+
+    .teachers-chat {
+      @include flex-manager(row, center, center);
+      margin-top: 50px;
+      height: 30vh;
+      gap: 50px;
+
+      :nth-child(2) {
+        margin-top: 100px;
+      }
+    }
+
+    .down-page {
+      @include flex-manager(column, flex-start, center);
+      height: 20vh;
+      margin-top: 20px;
+
+      span {
+        font-size: 18px;
+        color: #6A6767;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .section-two {
+    width: 100%;
+    @include flex-manager(column, center, center);
+    height: 80vh;
+
+    .speaker {
+      @include flex-manager(column, center, center);
+      position: relative;
+      width: 25%;
+      height: 40vh;
+      background: #FFFFFF;
+      box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
+      border-radius: 79.5px;
+
+      img {
+        transform: rotate(2deg);
+        box-shadow: 0 13px 14px 0 rgba(0, 0, 0, 0.17);
+        border-radius: 50px;
+        background: #DBF0ED;
+        position: absolute;
+        top: -50px;
+      }
+
+      :nth-child(2) {
+        font-family: IRANSansWeb_Boldwoff2, serif;
+        font-size: 30px;
+        font-weight: 900;
+        margin: 50px 0;
+      }
+
+      :nth-child(3) {
+        font-size: 25px;
+        font-weight: 600;
+        color: #afb3ae;
+        margin-bottom: 15px;
+      }
+
+      :last-child {
+        font-size: 25px;
+        font-weight: 600;
+        color: #0faaec;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .section-three {
+    width: 100%;
+    @include flex-manager(column, center, center);
+
+    .property {
+      font-size: 48px;
+      font-weight: 900;
+      margin: 70px 0;
+    }
+
+    .source {
+      @include flex-manager(column, center, center);
+      height: 30vh;
+      line-height: 50px;
+
+      :nth-child(2) {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+
+      :last-child {
+        font-size: 24px;
+        font-weight: 600;
+        color: #8C8C8C;
+      }
+    }
+
+    .homework {
+      @include flex-manager(column, flex-start, center);
+      margin-top: 50px;
+      height: 40vh;
+      line-height: 50px;
+
+      span {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 30px;
+      }
+    }
+
+    .class-test {
+      @include flex-manager(column, center, center);
+      margin-bottom: 80px;
+
+      span {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 30px;
+      }
+    }
+
+    .telegram {
+      @include flex-manager(column, flex-start, center);
+      line-height: 50px;
+      height: 40vh;
+
+      :nth-child(2) {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+
+      :last-child {
+        font-size: 24px;
+        font-weight: 600;
+        color: #8C8C8C;
+      }
+    }
+
+    .first-free {
+      @include flex-manager(column, flex-start, center);
+      height: 60vh;
+
+      span {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .section-four {
+    width: 100%;
+    @include flex-manager(column, flex-start, center);
+    height: 70vh;
+
+    .calender {
+      @include flex-manager(column, center, center);
+      position: relative;
+      width: 25%;
+      height: 40vh;
+      background: #FFFFFF;
+      box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
+      border-radius: 79.5px;
+
+      img {
+        background: rgba(90, 198, 144, 0.12);
+        box-shadow: 0 9px 11px 0 rgba(0, 0, 0, 0.21);
+        border-radius: 50px;
+        background: #DBF0ED;
+        position: absolute;
+        top: -50px;
+      }
+
+      :nth-child(2) {
+        font-family: IRANSansWeb_Boldwoff2, serif;
+        font-size: 30px;
+        font-weight: 900;
+        margin: 50px 0;
+      }
+
+      :nth-child(3) {
+        font-size: 25px;
+        font-weight: 600;
+        color: #A5A5A5;
+        margin-bottom: 15px;
+      }
+
+      :last-child {
+        font-size: 25px;
+        font-weight: 600;
+        color: #A5A5A5;
+      }
+    }
+  }
+
+  .section-five {
+    width: 100%;
+    @include flex-manager(column, flex-start, center);
+    height: 70vh;
+
+    .laptop {
+      @include flex-manager(column, center, center);
+      position: relative;
+      width: 25%;
+      height: 40vh;
+      background: #FFFFFF;
+      box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
+      border-radius: 79.5px;
+
+      img {
+        background: rgba(90, 198, 144, 0.12);
+        box-shadow: 0 9px 11px 0 rgba(0, 0, 0, 0.21);
+        border-radius: 50px;
+        background: #DBF0ED;
+        position: absolute;
+        top: -50px;
+      }
+
+      span {
+        font-size: 25px;
+        font-weight: 600;
+        color: #A5A5A5;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .section-six {
+    width: 100%;
+    @include flex-manager(column, flex-start, center);
+    height: 70vh;
+
+    .teacher {
+      @include flex-manager(column, center, center);
+      position: relative;
+      width: 25%;
+      height: 40vh;
+      background: #FFFFFF;
+      box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
+      border-radius: 79.5px;
+
+      img {
+        background: rgba(90, 198, 144, 0.12);
+        box-shadow: 0 9px 11px 0 rgba(0, 0, 0, 0.21);
+        border-radius: 50px;
+        background: #DBF0ED;
+        position: absolute;
+        top: -50px;
+      }
+
+      span {
+        font-size: 25px;
+        font-weight: 600;
+        color: #A5A5A5;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .footer-section {
+    position: fixed;
+    bottom: 0;
+    height: 19vh;
+    width: 100%;
+    @include flex-manager(column, center, center);
+    background-image: url("../../assets/curvesaye.png");
+
+    .footer {
+      @include flex-manager(row, space-evenly, center);
+      width: 90%;
+      height: 10vh;
+      position: relative;
+      bottom: 10px;
+      text-align: center;
+
+      :nth-child(1) {
+        width: 30%;
+        margin-bottom: 150px;
+
+      }
+
+      a {
+        background-image: linear-gradient(180deg, #6DBEF4 0%, #3B8AE5 100%);
+        color: white;
+        border-radius: 50px;
+        border: 1px solid #3B8AE5;
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 20px;
+        padding: 15px 70px;
+      }
+
+      :nth-child(3) {
+        width: 30%;
+        margin-bottom: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    @include flex-manager(column, center, center);
+    background-image: url("../../assets/backM.jpg");
+    width: 100%;
+
+    .main {
+      width: 100%;
+
+      .section-one {
+        width: 100%;
+
+        .logo {
+          padding: 10px 0;
+
+          img {
+            width: 30%;
+          }
+        }
+
+        .title {
+          font-size: 20px;
+        }
+
+        .nas-chat-resp {
+          @include flex-manager(row, flex-start, center);
+          width: 100%;
+          margin-top: 30px;
+
+          img {
+            width: 90%;
+          }
+        }
+
+        .jab-chat-resp {
+          @include flex-manager(row, flex-end, center);
+          width: 100%;
+          margin-top: 30px;
+
+          img {
+            width: 90%;
+          }
+        }
+
+        .nas-chat {
+          display: none;
+        }
+
+        .jab-chat {
+          img {
+            display: none;
+          }
+
+        }
+
+        .down-page {
+          display: none;
+        }
+      }
+
+      .section-two {
+        height: 30vh;
+
+        .speaker {
+          width: 87%;
+          height: 25vh;
+          border-radius: 21px;
+
+          img {
+            border-radius: 50px;
+            background: #DBF0ED;
+            width: 20%;
+          }
+
+          :nth-child(2) {
+            font-size: 16px;
+            margin: 20px 0;
+          }
+
+          :nth-child(3) {
+            font-size: 18px;
+          }
+
+          :last-child {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .section-three {
+        .property {
+          font-size: 32px;
+        }
+
+        .source {
+          img {
+            width: 30%;
+          }
+
+          :nth-child(2) {
+            font-size: 18px;
+          }
+
+          :last-child {
+            font-size: 16px;
+          }
+        }
+
+        .homework {
+          @include flex-manager(column, center, center);
+          margin: 0;
+
+          img {
+            width: 80%;
+          }
+
+          span {
+            font-size: 20px;
+          }
+        }
+
+        .class-test {
+          img {
+            width: 60%;
+          }
+
+          span {
+            font-size: 18px;
+          }
+        }
+
+        .telegram {
+          @include flex-manager(column, center, center);
+
+          :nth-child(2) {
+            font-size: 20px;
+          }
+
+          :last-child {
+            font-size: 18px;
+          }
+        }
+
+        .first-free {
+          height: 40vh;
+        }
+      }
+
+      .section-four {
+        height: 40vh;
+
+        .calender {
+          width: 87%;
+          height: 25vh;
+          border-radius: 21px;
+
+          img {
+            border-radius: 50px;
+            background: #DBF0ED;
+            width: 20%;
+          }
+
+          :nth-child(2) {
+            font-size: 20px;
+            margin: 20px 0;
+          }
+
+          :nth-child(3) {
+            font-size: 18px;
+          }
+
+          :last-child {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .section-five {
+        height: 40vh;
+
+        .laptop {
+          width: 87%;
+          height: 25vh;
+          border-radius: 21px;
+
+          img {
+            border-radius: 50px;
+            background: #DBF0ED;
+            width: 20%;
+          }
+
+          :nth-child(2) {
+            font-size: 20px;
+            text-align: center;
+            margin: 20px 0;
+          }
+        }
+      }
+
+      .section-six {
+        height: 50vh;
+
+        .teacher {
+          width: 87%;
+          height: 25vh;
+          border-radius: 21px;
+
+          img {
+            border-radius: 50px;
+            background: #DBF0ED;
+            width: 20%;
+          }
+
+          span {
+            font-size: 20px;
+            margin: 20px 0;
+          }
+
+        }
+      }
+
+      .footer-section {
+        background-image: url("../../assets/curveM.svg");
+        background-repeat: no-repeat;
+        height: 11vh;
+
+        .footer {
+          :nth-child(1) {
+            display: none;
+          }
+
+          a {
+            font-size: 18px;
+            padding: 4px 30px
+          }
+
+          :nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+//@media  screen and (max-width: 1080px) {
+//  body {
+//    @include flex-manager(column, center, center);
+//    background-image: url("../../assets/backD.jpg");
+//
+//    .main {
+//      width: 100%;
+//      .section-one {
+//        height: 100vh;
+//
+//        .logo {
+//          padding: 10px 0;
+//
+//          img {
+//            width: 30%;
+//          }
+//        }
+//
+//        .title {
+//          font-size: 20px;
+//        }
+//
+//        .nas-chat-resp {
+//          @include flex-manager(row, flex-start, center);
+//          width: 100%;
+//          margin-top: 50px;
+//
+//          img {
+//            width: 50%;
+//          }
+//        }
+//
+//        .jab-chat-resp {
+//          @include flex-manager(row, flex-end, center);
+//          width: 100%;
+//          margin-top: 30px;
+//
+//          img {
+//            width: 50%;
+//          }
+//        }
+//
+//        .nas-chat {
+//          display: none;
+//        }
+//
+//        .jab-chat {
+//          img {
+//            display: none;
+//          }
+//
+//        }
+//
+//        .down-page {
+//          display: none;
+//        }
+//      }
+//
+//      .section-two {
+//        height: 30vh;
+//
+//        .speaker {
+//          width: 60%;
+//          height: 25vh;
+//          border-radius: 21px;
+//
+//          img {
+//            border-radius: 50px;
+//            background: #DBF0ED;
+//            width: 20%;
+//          }
+//
+//          :nth-child(2) {
+//            font-size: 20px;
+//            margin: 20px 0;
+//          }
+//
+//          :nth-child(3) {
+//            font-size: 18px;
+//          }
+//
+//          :last-child {
+//            font-size: 18px;
+//          }
+//        }
+//      }
+//
+//      .section-three {
+//        .property {
+//          font-size: 32px;
+//        }
+//
+//        .source {
+//          img {
+//            width: 30%;
+//          }
+//
+//          :nth-child(2) {
+//            font-size: 18px;
+//          }
+//
+//          :last-child {
+//            font-size: 16px;
+//          }
+//        }
+//
+//        .homework {
+//          @include flex-manager(column, center, center);
+//          margin: 0;
+//
+//          img {
+//            width: 80%;
+//          }
+//
+//          span {
+//            font-size: 20px;
+//          }
+//        }
+//
+//        .class-test {
+//          img {
+//            width: 60%;
+//          }
+//
+//          span {
+//            font-size: 18px;
+//          }
+//        }
+//
+//        .telegram {
+//          @include flex-manager(column, center, center);
+//
+//          :nth-child(2) {
+//            font-size: 20px;
+//          }
+//
+//          :last-child {
+//            font-size: 18px;
+//          }
+//        }
+//
+//        .first-free {
+//          height: 40vh;
+//        }
+//      }
+//
+//      .section-four {
+//        height: 40vh;
+//
+//        .calender {
+//          width: 60%;
+//          height: 25vh;
+//          border-radius: 21px;
+//
+//          img {
+//            border-radius: 50px;
+//            background: #DBF0ED;
+//            width: 20%;
+//          }
+//
+//          :nth-child(2) {
+//            font-size: 20px;
+//            margin: 20px 0;
+//          }
+//
+//          :nth-child(3) {
+//            font-size: 18px;
+//          }
+//
+//          :last-child {
+//            font-size: 18px;
+//          }
+//        }
+//      }
+//
+//      .section-five{
+//        height: 40vh;
+//
+//        .laptop {
+//          width: 60%;
+//          height: 25vh;
+//          border-radius: 21px;
+//
+//          img {
+//            border-radius: 50px;
+//            background: #DBF0ED;
+//            width: 20%;
+//          }
+//
+//          :nth-child(2) {
+//            font-size: 20px;
+//            text-align: center;
+//            margin: 20px 0;
+//          }
+//        }
+//      }
+//
+//      .section-six {
+//        height: 50vh;
+//
+//        .teacher {
+//          width: 60%;
+//          height: 25vh;
+//          border-radius: 21px;
+//
+//          img {
+//            border-radius: 50px;
+//            background: #DBF0ED;
+//            width: 20%;
+//          }
+//
+//          span {
+//            font-size: 20px;
+//            margin: 20px 0;
+//          }
+//
+//        }
+//      }
+//
+//      .footer-section {
+//        background-image: url("../../assets/curveM.svg");
+//        background-repeat: no-repeat;
+//        height: 11vh;
+//        width: 100%;
+//        .footer {
+//          :nth-child(1) {
+//            display: none;
+//          }
+//
+//          a {
+//            font-size: 18px;
+//            padding: 4px 30px
+//          }
+//
+//          :nth-child(3) {
+//            display: none;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+
+
+/*# sourceMappingURL=main.scss.map */

@@ -1,0 +1,179 @@
+@font-face {
+    font-family: IRANSANSMEDIUM;
+    src: url('../font/iransans/ttf/IRANSansWeb(FaNum)_Medium.ttf');
+}
+
+@font-face {
+    font-family: IRANSansWeb;
+    src: url("../font/iransans/ttf/IRANSansWeb.ttf");
+}
+
+@font-face {
+    font-family: IRANSansweb-black;
+    src: url("../font/iransans/ttf/IRANSansWeb_Black.ttf");
+}
+
+@font-face {
+    font-family: IRANSansWeb-bold;
+    src: url("../font/iransans/ttf/IRANSansWeb_Bold.ttf");
+}
+
+@font-face {
+    font-family: IRANSansWeb-light;
+    src: url("../font/iransans/ttf/IRANSansWeb_Light.ttf");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Medium;
+    src: url("../font/iransans/ttf/IRANSansWeb_Medium.ttf");
+}
+
+@font-face {
+    font-family: IRANSansWeb_UltraLight;
+    src: url("../font/iransans/ttf/IRANSansWeb_UltraLight.ttf");
+}
+
+@font-face {
+    font-family: IRANSansWeb_UltraLight;
+    src: url("../font/iransans/ttf/IRANSansWeb_UltraLight.ttf");
+}
+
+@font-face {
+    font-family: IRANSansWeb_FaNum_Mediumeot;
+    src: url("../font/iransans/eot/IRANSansWeb(FaNum)_Medium.eot");
+}
+
+@font-face {
+    font-family: IRANSansWebeot;
+    src: url("../font/iransans/eot/IRANSansWeb.eot");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Blackeot;
+    src: url("../font/iransans/eot/IRANSansWeb_Black.eot");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Boldeot;
+    src: url("../font/iransans/eot/IRANSansWeb_Bold.eot");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Lighteot;
+    src: url("../font/iransans/eot/IRANSansWeb_Light.eot");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Mediumeot;
+    src: url("../font/iransans/eot/IRANSansWeb_Medium.eot");
+}
+
+@font-face {
+    font-family: IRANSansWeb_UltraLighteot;
+    src: url("../font/iransans/eot/IRANSansWeb_UltraLight.eot");
+}
+
+@font-face {
+    font-family: IRANSansWebwoff;
+    src: url("../font/iransans/woff/IRANSansWeb.woff");
+}
+
+@font-face {
+    font-family: IRANSansWebFaNum_Mediumwoff;
+    src: url("../font/iransans/woff/IRANSansWeb(FaNum)_Medium.woff");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Blackwoff;
+    src: url("../font/iransans/woff/IRANSansWeb_Black.woff");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Boldwoff;
+    src: url("../font/iransans/woff/IRANSansWeb_Bold.woff");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Lightwoff;
+    src: url("../font/iransans/woff/IRANSansWeb_Light.woff");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Mediumwoff;
+    src: url("../font/iransans/woff/IRANSansWeb_Medium.woff");
+}
+
+@font-face {
+    font-family: IRANSansWeb_UltraLightwoff;
+    src: url("../font/iransans/woff/IRANSansWeb_UltraLight.woff");
+}
+
+@font-face {
+    font-family: IRANSansWebFaNum_Mediumwoff2;
+    src: url("../font/iransans/woff2/IRANSansWeb(FaNum)_Medium.woff2");
+}
+
+@font-face {
+    font-family: IRANSansWebwoff2;
+    src: url("../font/iransans/woff2/IRANSansWeb.woff2");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Blackwoff2;
+    src: url("../font/iransans/woff2/IRANSansWeb_Black.woff2");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Boldwoff2;
+    src: url("../font/iransans/woff2/IRANSansWeb_Bold.woff2");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Lightwoff2;
+    src: url("../font/iransans/woff2/IRANSansWeb_Light.woff2");
+}
+
+@font-face {
+    font-family: IRANSansWeb_Mediumwoff2;
+    src: url("../font/iransans/woff2/IRANSansWeb_Medium.woff2");
+}
+
+@font-face {
+    font-family: IRANSansWeb_UltraLightwoff2;
+    src: url("../font/iransans/woff2/IRANSansWeb_UltraLight.woff2");
+}
+
+@font-face {
+    font-family: Yekan Bakh ttf;
+    src: url("../font/yekan bakh/Yekan Bakh.ttf");
+}
+
+@font-face {
+    font-family: Yekan Bakh FA Thin ttf;
+    src: url("../font/yekan bakh/Yekan Bakh FA 02 Thin.ttf");
+}
+
+@font-face {
+    font-family:Yekan Bakh FA  Medium ttf;
+    src: url("../font/yekan bakh/Yekan Bakh FA 05 Medium.ttf");
+}
+
+@font-face {
+    font-family: Yekan Bakh FA  Bold ttf;
+    src: url("../font/yekan bakh/Yekan Bakh FA 06 Bold.ttf");
+}
+
+@font-face {
+    font-family: Yekan Bakh FA  Fat ttf;
+    src: url("../font/yekan bakh/Yekan Bakh FA 08 Fat.ttf");
+}
+
+@font-face {
+    font-family: Yekan Bakh FA  Heavy ttf;
+    src: url("../font/yekan bakh/Yekan Bakh FA 07 Heavy.ttf");
+}
+
+@font-face {
+    font-family:YekanBakh_Light ttf;
+    src: url("../font/yekan bakh/YekanBakh_Light.ttf");
+}
