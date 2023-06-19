@@ -15,6 +15,9 @@ body {
   padding: 0;
   font-family: IRANSansWebwoff2, serif;
   background-image: url("../../assets/backD.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 
   .section-one {
     width: 100%;
@@ -78,11 +81,11 @@ body {
     @include flex-manager(column, center, center);
     height: 80vh;
 
-    .speaker {
+    .box-style {
       @include flex-manager(column, center, center);
       position: relative;
       width: 25%;
-      height: 40vh;
+      padding: 50px 5px;
       background: #FFFFFF;
       box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
       border-radius: 79.5px;
@@ -206,11 +209,11 @@ body {
     @include flex-manager(column, flex-start, center);
     height: 70vh;
 
-    .calender {
+    .box-style {
       @include flex-manager(column, center, center);
       position: relative;
       width: 25%;
-      height: 40vh;
+      padding: 50px 5px;
       background: #FFFFFF;
       box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
       border-radius: 79.5px;
@@ -251,11 +254,11 @@ body {
     @include flex-manager(column, flex-start, center);
     height: 70vh;
 
-    .laptop {
+    .box-style {
       @include flex-manager(column, center, center);
       position: relative;
       width: 25%;
-      height: 40vh;
+      padding: 145px 5px;
       background: #FFFFFF;
       box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
       border-radius: 79.5px;
@@ -283,11 +286,11 @@ body {
     @include flex-manager(column, flex-start, center);
     height: 70vh;
 
-    .teacher {
+    .box-style {
       @include flex-manager(column, center, center);
       position: relative;
       width: 25%;
-      height: 40vh;
+      padding: 125px 5px;
       background: #FFFFFF;
       box-shadow: 0 21px 13px -9px rgba(0, 0, 0, 0.06);
       border-radius: 79.5px;
@@ -313,10 +316,13 @@ body {
   .footer-section {
     position: fixed;
     bottom: 0;
-    height: 19vh;
+    height: 20vh;
     width: 100%;
     @include flex-manager(column, center, center);
-    background-image: url("../../assets/curvesaye.png");
+    background-image: url("../../assets/curve.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
 
     .footer {
       @include flex-manager(row, space-evenly, center);
@@ -351,10 +357,255 @@ body {
   }
 }
 
+
+
+@media  screen and (max-width: 1080px) {
+  body {
+    @include flex-manager(column, center, center);
+    background-image: url("../../assets/backD.jpg");
+
+    .main {
+      width: 100%;
+      .section-one {
+        height: 100vh;
+
+        .logo {
+          padding: 10px 0;
+
+          img {
+            width: 30%;
+          }
+        }
+
+        .title {
+          font-size: 20px;
+        }
+
+        .nas-chat-resp {
+          @include flex-manager(row, flex-start, center);
+          width: 100%;
+          margin-top: 50px;
+
+          img {
+            width: 50%;
+          }
+        }
+
+        .jab-chat-resp {
+          @include flex-manager(row, flex-end, center);
+          width: 100%;
+          margin-top: 30px;
+
+          img {
+            width: 50%;
+          }
+        }
+
+        .nas-chat {
+          display: none;
+        }
+
+        .jab-chat {
+          img {
+            display: none;
+          }
+
+        }
+
+        .down-page {
+          display: none;
+        }
+      }
+
+      .section-two {
+        height: 30vh;
+
+        .speaker {
+          width: 60%;
+          height: 25vh;
+          border-radius: 21px;
+
+          img {
+            border-radius: 50px;
+            background: #DBF0ED;
+            width: 20%;
+          }
+
+          :nth-child(2) {
+            font-size: 20px;
+            margin: 20px 0;
+          }
+
+          :nth-child(3) {
+            font-size: 18px;
+          }
+
+          :last-child {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .section-three {
+        .property {
+          font-size: 32px;
+        }
+
+        .source {
+          img {
+            width: 30%;
+          }
+
+          :nth-child(2) {
+            font-size: 18px;
+          }
+
+          :last-child {
+            font-size: 16px;
+          }
+        }
+
+        .homework {
+          @include flex-manager(column, center, center);
+          margin: 0;
+
+          img {
+            width: 80%;
+          }
+
+          span {
+            font-size: 20px;
+          }
+        }
+
+        .class-test {
+          img {
+            width: 60%;
+          }
+
+          span {
+            font-size: 18px;
+          }
+        }
+
+        .telegram {
+          @include flex-manager(column, center, center);
+
+          :nth-child(2) {
+            font-size: 20px;
+          }
+
+          :last-child {
+            font-size: 18px;
+          }
+        }
+
+        .first-free {
+          height: 40vh;
+        }
+      }
+
+      .section-four {
+        height: 40vh;
+
+        .calender {
+          width: 60%;
+          height: 25vh;
+          border-radius: 21px;
+
+          img {
+            border-radius: 50px;
+            background: #DBF0ED;
+            width: 20%;
+          }
+
+          :nth-child(2) {
+            font-size: 20px;
+            margin: 20px 0;
+          }
+
+          :nth-child(3) {
+            font-size: 18px;
+          }
+
+          :last-child {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .section-five{
+        height: 40vh;
+
+        .laptop {
+          width: 60%;
+          height: 25vh;
+          border-radius: 21px;
+
+          img {
+            border-radius: 50px;
+            background: #DBF0ED;
+            width: 20%;
+          }
+
+          :nth-child(2) {
+            font-size: 20px;
+            text-align: center;
+            margin: 20px 0;
+          }
+        }
+      }
+
+      .section-six {
+        height: 50vh;
+
+        .teacher {
+          width: 60%;
+          height: 25vh;
+          border-radius: 21px;
+
+          img {
+            border-radius: 50px;
+            background: #DBF0ED;
+            width: 20%;
+          }
+
+          span {
+            font-size: 20px;
+            margin: 20px 0;
+          }
+
+        }
+      }
+
+      .footer-section {
+        background-image: url("../../assets/curveM.svg");
+        height: 11vh;
+        .footer {
+          :nth-child(1) {
+            display: none;
+          }
+
+          a {
+            font-size: 18px;
+            padding: 4px 30px
+          }
+
+          :nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     @include flex-manager(column, center, center);
     background-image: url("../../assets/backM.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     width: 100%;
 
     .main {
@@ -362,6 +613,7 @@ body {
 
       .section-one {
         width: 100%;
+        height: 120vh;
 
         .logo {
           padding: 10px 0;
@@ -414,9 +666,9 @@ body {
       .section-two {
         height: 30vh;
 
-        .speaker {
+        .box-style {
           width: 87%;
-          height: 25vh;
+          padding: 47px 0;
           border-radius: 21px;
 
           img {
@@ -500,11 +752,10 @@ body {
       }
 
       .section-four {
-        height: 40vh;
+        height: 50vh;
 
-        .calender {
+        .box-style {
           width: 87%;
-          height: 25vh;
           border-radius: 21px;
 
           img {
@@ -529,11 +780,11 @@ body {
       }
 
       .section-five {
-        height: 40vh;
+        height: 50vh;
 
-        .laptop {
+        .box-style {
           width: 87%;
-          height: 25vh;
+          padding: 65px 0;
           border-radius: 21px;
 
           img {
@@ -551,11 +802,10 @@ body {
       }
 
       .section-six {
-        height: 50vh;
 
-        .teacher {
+        .box-style {
           width: 87%;
-          height: 25vh;
+          padding: 47px 0;
           border-radius: 21px;
 
           img {
@@ -574,7 +824,7 @@ body {
 
       .footer-section {
         background-image: url("../../assets/curveM.svg");
-        background-repeat: no-repeat;
+        background-attachment: fixed;
         height: 11vh;
 
         .footer {
@@ -595,249 +845,6 @@ body {
     }
   }
 }
-
-//@media  screen and (max-width: 1080px) {
-//  body {
-//    @include flex-manager(column, center, center);
-//    background-image: url("../../assets/backD.jpg");
-//
-//    .main {
-//      width: 100%;
-//      .section-one {
-//        height: 100vh;
-//
-//        .logo {
-//          padding: 10px 0;
-//
-//          img {
-//            width: 30%;
-//          }
-//        }
-//
-//        .title {
-//          font-size: 20px;
-//        }
-//
-//        .nas-chat-resp {
-//          @include flex-manager(row, flex-start, center);
-//          width: 100%;
-//          margin-top: 50px;
-//
-//          img {
-//            width: 50%;
-//          }
-//        }
-//
-//        .jab-chat-resp {
-//          @include flex-manager(row, flex-end, center);
-//          width: 100%;
-//          margin-top: 30px;
-//
-//          img {
-//            width: 50%;
-//          }
-//        }
-//
-//        .nas-chat {
-//          display: none;
-//        }
-//
-//        .jab-chat {
-//          img {
-//            display: none;
-//          }
-//
-//        }
-//
-//        .down-page {
-//          display: none;
-//        }
-//      }
-//
-//      .section-two {
-//        height: 30vh;
-//
-//        .speaker {
-//          width: 60%;
-//          height: 25vh;
-//          border-radius: 21px;
-//
-//          img {
-//            border-radius: 50px;
-//            background: #DBF0ED;
-//            width: 20%;
-//          }
-//
-//          :nth-child(2) {
-//            font-size: 20px;
-//            margin: 20px 0;
-//          }
-//
-//          :nth-child(3) {
-//            font-size: 18px;
-//          }
-//
-//          :last-child {
-//            font-size: 18px;
-//          }
-//        }
-//      }
-//
-//      .section-three {
-//        .property {
-//          font-size: 32px;
-//        }
-//
-//        .source {
-//          img {
-//            width: 30%;
-//          }
-//
-//          :nth-child(2) {
-//            font-size: 18px;
-//          }
-//
-//          :last-child {
-//            font-size: 16px;
-//          }
-//        }
-//
-//        .homework {
-//          @include flex-manager(column, center, center);
-//          margin: 0;
-//
-//          img {
-//            width: 80%;
-//          }
-//
-//          span {
-//            font-size: 20px;
-//          }
-//        }
-//
-//        .class-test {
-//          img {
-//            width: 60%;
-//          }
-//
-//          span {
-//            font-size: 18px;
-//          }
-//        }
-//
-//        .telegram {
-//          @include flex-manager(column, center, center);
-//
-//          :nth-child(2) {
-//            font-size: 20px;
-//          }
-//
-//          :last-child {
-//            font-size: 18px;
-//          }
-//        }
-//
-//        .first-free {
-//          height: 40vh;
-//        }
-//      }
-//
-//      .section-four {
-//        height: 40vh;
-//
-//        .calender {
-//          width: 60%;
-//          height: 25vh;
-//          border-radius: 21px;
-//
-//          img {
-//            border-radius: 50px;
-//            background: #DBF0ED;
-//            width: 20%;
-//          }
-//
-//          :nth-child(2) {
-//            font-size: 20px;
-//            margin: 20px 0;
-//          }
-//
-//          :nth-child(3) {
-//            font-size: 18px;
-//          }
-//
-//          :last-child {
-//            font-size: 18px;
-//          }
-//        }
-//      }
-//
-//      .section-five{
-//        height: 40vh;
-//
-//        .laptop {
-//          width: 60%;
-//          height: 25vh;
-//          border-radius: 21px;
-//
-//          img {
-//            border-radius: 50px;
-//            background: #DBF0ED;
-//            width: 20%;
-//          }
-//
-//          :nth-child(2) {
-//            font-size: 20px;
-//            text-align: center;
-//            margin: 20px 0;
-//          }
-//        }
-//      }
-//
-//      .section-six {
-//        height: 50vh;
-//
-//        .teacher {
-//          width: 60%;
-//          height: 25vh;
-//          border-radius: 21px;
-//
-//          img {
-//            border-radius: 50px;
-//            background: #DBF0ED;
-//            width: 20%;
-//          }
-//
-//          span {
-//            font-size: 20px;
-//            margin: 20px 0;
-//          }
-//
-//        }
-//      }
-//
-//      .footer-section {
-//        background-image: url("../../assets/curveM.svg");
-//        background-repeat: no-repeat;
-//        height: 11vh;
-//        width: 100%;
-//        .footer {
-//          :nth-child(1) {
-//            display: none;
-//          }
-//
-//          a {
-//            font-size: 18px;
-//            padding: 4px 30px
-//          }
-//
-//          :nth-child(3) {
-//            display: none;
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
 
 
 /*# sourceMappingURL=main.scss.map */
